@@ -67,6 +67,6 @@ docker network create alpine-net
 docker run -tdi --rm --name alpine1 --network alpine-net alpine ash
 docker run -tdi --rm --name alpine2 --network alpine-net alpine ash
 docker run -tdi --rm --name alpine3  alpine ash
-docker run -tdi --rm --name alpine4 --network alpine-net alpine ash
-docker network connect alpine-net alpine3
+docker run -tdi --rm --name alpine4  alpine ash
+docker network connect alpine-net alpine4
 ```
